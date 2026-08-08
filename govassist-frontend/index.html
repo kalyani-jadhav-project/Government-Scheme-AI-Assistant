@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GovAssist AI - Government Scheme Recommendation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="wxo-chat-root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.wxOConfiguration = {
+        orchestrationID: "1a82f718638b45d8b3f116ee5f0ed193_c10760df-251a-4acc-9e0f-44aee993a009",
+        hostURL: "https://au-syd.watson-orchestrate.cloud.ibm.com",
+        rootElementID: "wxo-chat-root",
+        deploymentPlatform: "ibmcloud",
+        crn: "crn:v1:bluemix:public:watsonx-orchestrate:au-syd:a/1a82f718638b45d8b3f116ee5f0ed193:c10760df-251a-4acc-9e0f-44aee993a009::",
+        chatOptions: {
+          agentId: "7f16481b-87f9-455a-96b9-70601de52a3d",
+        }
+      };
+      setTimeout(function () {
+        const script = document.createElement('script');
+        script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+        script.addEventListener('load', function () {
+          wxoLoader.init();
+        });
+        document.head.appendChild(script);
+      }, 0);
+    </script>
+  </body>
+</html>
