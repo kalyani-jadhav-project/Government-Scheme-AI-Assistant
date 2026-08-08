@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GovAssist AI — Government Scheme Recommendation System
 
 > **B.Tech Final Year Project** | React + Spring Boot 3 + PostgreSQL + Gemini AI
@@ -226,3 +227,6 @@ After setup, register at `/register` or use:
 ---
 
 *Made with ❤️ for India | B.Tech Final Year Project 2024*
+=======
+# Government-Scheme-AI-Assistant
+>>>>>>> 947d4f7c71a0335784315d9bd9405b313c041f84
